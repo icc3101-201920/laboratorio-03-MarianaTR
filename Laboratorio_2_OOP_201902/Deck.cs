@@ -1,4 +1,4 @@
-﻿using Laboratorio_2_OOP_201902.Card;
+﻿using Laboratorio_2_OOP_201902;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -18,22 +18,16 @@ namespace Laboratorio_2_OOP_201902
 
         public List<Card> CardsOfPlayers { get => cardsOfPlayers; set => cardsOfPlayers = value; }
 
-        public void AddCombatCard(CombatCard combatCard)
+        public void AddCard(Card card)
         {
-            throw new NotImplementedException();
+            cardsOfPlayers.Add(card);
         }
-        public void AddSpecialCard(SpecialCard specialCard)
+    
+        public void DestroyCard()
         {
-            throw new NotImplementedException();
+            cardsOfPlayers.Clear();
         }
-        public void DestroyCombatCard(int cardId)
-        {
-            throw new NotImplementedException();
-        }
-        public void DestroySpecialCard(int cardId)
-        {
-            throw new NotImplementedException();
-        }
+
         public void Shuffle() { 
             throw new NotImplementedException();
         }
